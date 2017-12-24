@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B8F604B1FEA21FC00E4ADE7"
+               BuildableName = "Homework4 CoreData.app"
+               BlueprintName = "Homework4 CoreData"
+               ReferencedContainer = "container:Homework4 CoreData.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9B8F604B1FEA21FC00E4ADE7"
+            BuildableName = "Homework4 CoreData.app"
+            BlueprintName = "Homework4 CoreData"
+            ReferencedContainer = "container:Homework4 CoreData.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>

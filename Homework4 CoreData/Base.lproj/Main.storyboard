@@ -159,7 +159,7 @@
         <!--Note Detail View Controller-->
         <scene sceneID="bNG-e4-kzE">
             <objects>
-                <viewController id="pdF-fK-A1n" customClass="NoteDetailViewController" customModule="Homework4_CoreData" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="storyboardDetail" id="pdF-fK-A1n" customClass="NoteDetailViewController" customModule="Homework4_CoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HOW-rl-zeJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,37 +179,40 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dlz-2t-9ga"/>
                                     <barButtonItem image="more" id="Elk-lL-gad" userLabel="moreButton">
                                         <color key="tintColor" red="0.42348030209999998" green="0.42355769869999998" blue="0.4234754443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="moreButtonAction:" destination="pdF-fK-A1n" id="fr4-lT-8Sf"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KT-Cn-1uY">
-                                <rect key="frame" x="8" y="148" width="359" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nvm-vx-WaX">
-                                <rect key="frame" x="8" y="177" width="359" height="557"/>
+                                <rect key="frame" x="8" y="178.33333333333331" width="359" height="555.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">fLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wWj-Jr-5fl">
+                                <rect key="frame" x="8" y="148" width="359" height="30.333333333333343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wWj-Jr-5fl" secondAttribute="height" multiplier="343:29" id="V5Q-fA-i0c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="deM-SB-Bwj" firstAttribute="trailing" secondItem="6KT-Cn-1uY" secondAttribute="trailing" constant="8" id="0Ep-2H-VYb"/>
-                            <constraint firstItem="Nvm-vx-WaX" firstAttribute="top" secondItem="6KT-Cn-1uY" secondAttribute="bottom" constant="8" id="A4M-7a-HFR"/>
                             <constraint firstItem="uBH-jz-zOX" firstAttribute="bottom" secondItem="deM-SB-Bwj" secondAttribute="bottom" id="C0q-Cu-OLx"/>
+                            <constraint firstItem="wWj-Jr-5fl" firstAttribute="leading" secondItem="deM-SB-Bwj" secondAttribute="leading" constant="8" id="DIe-sf-eod"/>
                             <constraint firstItem="deM-SB-Bwj" firstAttribute="trailing" secondItem="Nvm-vx-WaX" secondAttribute="trailing" constant="8" id="NAF-aq-8lw"/>
-                            <constraint firstItem="6KT-Cn-1uY" firstAttribute="top" secondItem="deM-SB-Bwj" secondAttribute="top" constant="8" id="U94-VB-feP"/>
-                            <constraint firstItem="6KT-Cn-1uY" firstAttribute="top" secondItem="deM-SB-Bwj" secondAttribute="top" constant="8" id="V1U-eg-xM9"/>
+                            <constraint firstItem="wWj-Jr-5fl" firstAttribute="top" secondItem="deM-SB-Bwj" secondAttribute="top" constant="8" id="Oaj-10-j5j"/>
+                            <constraint firstItem="Nvm-vx-WaX" firstAttribute="top" secondItem="wWj-Jr-5fl" secondAttribute="bottom" id="Yz2-NJ-uGA"/>
+                            <constraint firstItem="deM-SB-Bwj" firstAttribute="trailing" secondItem="wWj-Jr-5fl" secondAttribute="trailing" constant="8" id="aNX-OP-5Y8"/>
                             <constraint firstItem="uBH-jz-zOX" firstAttribute="top" secondItem="Nvm-vx-WaX" secondAttribute="bottom" id="fkD-Xm-KBw"/>
-                            <constraint firstItem="6KT-Cn-1uY" firstAttribute="leading" secondItem="deM-SB-Bwj" secondAttribute="leading" constant="8" id="ifg-G2-exO"/>
                             <constraint firstItem="uBH-jz-zOX" firstAttribute="trailing" secondItem="deM-SB-Bwj" secondAttribute="trailing" id="j6h-sS-7xB"/>
                             <constraint firstItem="uBH-jz-zOX" firstAttribute="leading" secondItem="deM-SB-Bwj" secondAttribute="leading" id="kMc-OY-tH7"/>
-                            <constraint firstItem="6KT-Cn-1uY" firstAttribute="leading" secondItem="deM-SB-Bwj" secondAttribute="leading" constant="8" id="l3S-va-6bi"/>
-                            <constraint firstItem="deM-SB-Bwj" firstAttribute="trailing" secondItem="6KT-Cn-1uY" secondAttribute="trailing" constant="8" id="x6k-Eu-Fxa"/>
                             <constraint firstItem="Nvm-vx-WaX" firstAttribute="leading" secondItem="deM-SB-Bwj" secondAttribute="leading" constant="8" id="xbt-Kc-kQ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="deM-SB-Bwj"/>
@@ -227,6 +230,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentLabel" destination="Nvm-vx-WaX" id="rk6-07-1DM"/>
+                        <outlet property="titleLabel" destination="wWj-Jr-5fl" id="GWu-5u-kha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDW-47-BVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,7 +17,7 @@ class NoteCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         self.noteViewContainer.backgroundColor = UIColor.white
         self.noteViewContainer.layer.borderWidth = 1
-//        self.noteViewContainer.layer.cornerRadius = 5
+        self.noteViewContainer.layer.cornerRadius = 5
     }
     
 }
